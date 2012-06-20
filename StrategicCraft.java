@@ -9,7 +9,8 @@ public class StrategicCraft{
 	
 	public StrategicCraft()
 	{
-		TowerPackageBlock b = new TowerPackageBlock(254, 23);
+		int tex = ModLoader.addOverride("/terrain.png", "/textures/TowerPack.png");
+		TowerPackageBlock b = new TowerPackageBlock(254, tex);
 		ModLoader.registerBlock(b);
 		ModLoader.addRecipe(new ItemStack(b), new Object[]{"D",Character.valueOf('D'),Block.dirt});
 		b.setBlockName("Tower Package Block");
