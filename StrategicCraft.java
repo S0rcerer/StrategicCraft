@@ -9,11 +9,11 @@ public class StrategicCraft{
 	
 	public StrategicCraft()
 	{
-		BlockStep b = new BlockStep(254,false);
+		TowerPackageBlock b = new TowerPackageBlock(254, 23);
 		ModLoader.registerBlock(b);
 		ModLoader.addRecipe(new ItemStack(b), new Object[]{"D",Character.valueOf('D'),Block.dirt});
-		b.setBlockName("Tonnik block");
-		ModLoader.addName(b, "Tonniks Block");
+		b.setBlockName("Tower Package Block");
+		ModLoader.addName(b, "Tower Package");
 	}
 
 }
