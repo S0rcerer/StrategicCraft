@@ -7,7 +7,7 @@ import net.minecraft.src.ModLoader;
 
 public class StrategicCraft{
 	
-	public StrategicCraft()
+	public static void load()
 	{
 		int tex = ModLoader.addOverride("/terrain.png", "/textures/TowerPack.png");
 		TowerPackageBlock b = new TowerPackageBlock(254, tex);
